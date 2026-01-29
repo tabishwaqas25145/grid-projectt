@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+
+.sidebar {
+  background: #101820;
+  color: white;
+  padding: 30px;
+  height: 100vh;
+  position: fixed;
+  width: 250px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.sidebar nav a:hover {
+  color: gold;
+}
+
+
+.hero {
+  grid-column: 2;
+  background: url(heroimg.png) center/cover;
+  padding: 120px;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 50px;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.btn {
+  background: gold;
+
+  padding: 12px 25px;
+  text-decoration: none;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+.realtors {
+  grid-column: 2;
+  padding: 60px;
+  background: #f4f4f4;
+}
+
+.realtor-box {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.realtor {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.realtor img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+.features {
+  grid-column: 2;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.feature {
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 0 10px #ddd;
+}
+
+
+.story {
+  grid-column: 2;
+  display: flex;
+  padding: 60px;
+  gap: 30px;
+  align-items: center;
+}
+
+.story-img img {
+  width: 400px;
+  border-radius: 15px;
+}
+
+
+.homes {
+  grid-column: 2;
+  padding: 60px;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.home-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #ddd;
+  text-align: center;
+}
+
+.home-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.home-card h3 {
+  margin: 15px 0;
+}
+
+.home-card p {
+  font-weight: bold;
+}
+
+.btn.small {
+  display: inline-block;
+  margin: 15px 0;
+}
+
+
+.gallery {
+  grid-column: 2;
+  padding: 60px;
+  background: #f4f4f4;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+.footer {
+  grid-column: 2;
+  padding: 20px;
+  text-align: center;
+  background: #101820;
+  color: white;
+}
